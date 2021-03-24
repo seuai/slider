@@ -1,0 +1,8 @@
+.slider > div > div {height: 100vh;}
+.slider > div > div:nth-child(1) {background: #ff6e00;}
+.slider > div > div:nth-child(2) {background: #ffc800;}
+.slider > div > div:nth-child(3) {background: #00b400;}
+
+.slider > nav {position: fixed;bottom: 0;left: 0;right: 0;}
+.slider > nav button.next {right: 2px;}
+.slider > nav button.prev {left: 2px;}
