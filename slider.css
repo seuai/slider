@@ -1,0 +1,57 @@
+.slider {
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    touch-action: pan-y;
+}
+.slider > :first-child {
+    transform: translateX(var(--x,calc(-100% * var(--i))));
+    transition: transform 0.5s;
+    user-select: none;
+}
+.slider[style*="--x"] > * {
+    transition: none;
+}
+.slider > :first-child > div {
+    display: inline-block;
+    width: 100%;
+}
+.slider > nav {
+    text-align: center;
+    padding-bottom:20px;
+}
+.slider > nav > button.next,
+.slider > nav > button.prev {
+    position: fixed!important;
+    width: 12%!important;
+    height: 57px!important;
+    max-width: 56px;
+    max-height: 57px;
+    top: 50%;
+    margin-top: -31px;
+    z-index: 1000;
+    text-indent: -9999px;
+}
+.slider[data-first="true"] nav > button.prev {
+    opacity: 0;
+}
+.slider[data-last="true"] nav > button.next {
+    opacity: 0;
+}
+.slider > nav > :not(:first-child),
+.slider > nav > :not(:last-child) {
+    background: #c1c1c1;
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    margin: 0 5px;
+    outline: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+.slider > nav > .on {
+    background: #fcc71b;
+}
