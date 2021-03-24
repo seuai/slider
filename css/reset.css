@@ -1,8 +1,8 @@
 @charset "utf-8";
-html{overflow-x: hidden;overflow-y:overlay}
+html{overflow-x: hidden;overflow-y:overlay;}
 html, body {min-height: 100vh;color: #6e6e6e;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-weight:normal;font-size: 15px;line-height: 1;background-size: cover;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
 *, *:before, *:after {-webkit-font-smoothing: antialiased;-webkit-tap-highlight-color: transparent;box-sizing: border-box;border:none;outline: 0;font-family: inherit;font-size: inherit;margin: 0;padding: 0;overflow-wrap: break-word;word-break: keep-all;white-space: normal;-ms-overflow-style:none;}
-body {background: rgba(255, 254, 252, 1);display: inline-block;width: 100%;}
+body {background: rgba(255, 254, 252, 1);width: 100%;}
 main {display:block;}
 dl {overflow:hidden;}
 dt {float: left;}
