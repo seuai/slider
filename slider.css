@@ -1,6 +1,5 @@
 .slider {
     font-size: 0;
-    white-space: nowrap;
     overflow: hidden;
     width: 100%;
     touch-action: pan-y;
@@ -9,6 +8,7 @@
     transform: translateX(var(--x,calc(-100% * var(--i))));
     transition: transform 0.5s;
     user-select: none;
+    white-space: nowrap;
 }
 .slider[style*="--x"] > * {
     transition: none;
@@ -23,9 +23,9 @@
 }
 .slider > nav > button.next,
 .slider > nav > button.prev {
-    position: fixed!important;
-    width: 12%!important;
-    height: 57px!important;
+    position: fixed;
+    width: 12%;
+    height: 57px;
     max-width: 56px;
     max-height: 57px;
     top: 50%;
@@ -53,5 +53,5 @@
     padding: 0;
 }
 .slider > nav > .on {
-    background: #fcc71b;
+    background: #000000;
 }
